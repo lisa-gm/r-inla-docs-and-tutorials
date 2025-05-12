@@ -1,6 +1,6 @@
 title: r-inla-docs-and-tutorials
 description: Gallery of R-INLA documentation and tutorials
-remote_theme: minima
+remote_theme: just-the-docs/just-the-docs
 color_scheme: light
 
 # Optional: add these for better navigation
