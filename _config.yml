@@ -1,4 +1,9 @@
 title: r-inla-docs-and-tutorials
 description: Gallery of R-INLA documentation and tutorials
-theme: minima
-baseurl: ""  
+remote_theme: just-the-docs/just-the-docs
+color_scheme: light
+
+# Optional: add these for better navigation
+search_enabled: true
+heading_anchors: true
+
