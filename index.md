@@ -9,6 +9,5 @@ This site showcases different applications of the R-INLA package.
 
 ## Examples
 
-- [Time Series Forecasting](examples/survival-modeling/)
-- [Spatial Analysis](examples/spatial/)
-- [Bayesian Modeling](examples/regression/)
+- [Survival Modeling](examples/survival-modeling/)
+- [Spatial Modeling](examples/spatial-modeling/)
