@@ -1,4 +1,6 @@
 title: r-inla-docs-and-tutorials
 description: Gallery of R-INLA documentation and tutorials
 theme: minima
+baseurl: "/r-inla-docs-and-tutorials" 
+url: "https://lisa-gm.github.io"    
 
