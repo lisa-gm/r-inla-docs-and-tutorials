@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Home
+layout: default
 ---
 
 # R Package Example Gallery
@@ -9,5 +9,5 @@ This site showcases different applications of the R-INLA package.
 
 ## Examples
 
-- [Survival Modeling]({{ site.baseurl }}/examples/survival-modeling/)
-- [Spatial Modeling]({{ site.baseurl }}/examples/spatial-modeling/)
+- [Survival Modeling](examples/survival-modeling/)
+- [Spatial Modeling](examples/spatial-modeling/)

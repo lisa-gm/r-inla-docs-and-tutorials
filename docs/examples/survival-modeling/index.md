@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Survival Modeling
+layout: default
 ---
 
 # Survival Modeling

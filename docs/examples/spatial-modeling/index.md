@@ -1,6 +1,6 @@
 ---
-layout: default
 title: Spatial Modeling
+layout: default
 ---
 
 # Spatial Analysis
