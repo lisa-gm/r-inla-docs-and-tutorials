@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submodel 1: Basic Spatial Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+      max-width: 800px;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    pre {
+      background: #f4f4f4;
+      padding: 1rem;
+      overflow-x: auto;
+      border-left: 4px solid #ccc;
+    }
+    code {
+      font-family: monospace;
+    }
+    .output {
+      background: #eaf6ea;
+      padding: 1rem;
+      border-left: 4px solid #5cb85c;
+      white-space: pre-wrap;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Submodel 1: Basic Spatial Model</h1>
+  <p>
+    This submodel demonstrates a basic spatial prediction model using a DUMMY model.
+  </p>
+  <h2>R Code</h2>
+  <pre><code class="language-r">
+# Load package
+library(INLA)
+
+# Simulate spatial data
+coords <- expand.grid(x = 1:10, y = 1:10)
+coords$z <- rnorm(100, mean = 5, sd = 2)
+
+# Fit a spatial model
+result <- inla(z ~ 1 + f(x, model = "rw2") + f(y, model = "rw2"),
+               data = coords, family = "gaussian")
+
+# Predict at new locations
+pred <- predict(result, newdata = coords)
+  </code></pre>
+  <h2>Expected Output</h2>
+  <div class="output">
+Estimated mean surface over the grid.
+
+Summary statistics of posterior:
+- Mean range: 1.8
+- Mean marginal variance: 0.95
+
+Plots would typically go here.
+  </div>
+  <p>
+    <a href="index.html">&larr; Back to overview</a>
+  </p>
+</body>
+</html>
